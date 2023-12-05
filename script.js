@@ -44,4 +44,19 @@ export function aufgabe02(args) {
       return true
     }
   }
-  
+
+  export function aufgabe06(args) {
+    const inout = args 
+    if (inout === "") {
+      return false 
+    }
+   for ( let i =0 ; i < input.length; i++) {
+    const currentElement = input [i].toLowerCase()
+    if (currentElement.charCodeAt() < 97 || currentElement.charCodeAt() > 122) {
+      if (currentElement.charCodeAt() != 32) {
+        return true
+      }
+    }
+   }
+   return false
+  }
